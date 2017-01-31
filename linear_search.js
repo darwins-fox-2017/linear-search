@@ -4,6 +4,11 @@
 console.log("Linear Search")
 let linearSearch = (target, values) => {
   //write your code here
+  for (let i = 0; i < values.length; i++) {
+    while (values.indexOf(target) == -1 || values.indexOf(target) >= 0) {
+      return values.indexOf(target)
+    }
+  }
 }
 
 let random_numbers = [ 6, 29, 18, 2, 72, 19, 18, 10, 37 ];
